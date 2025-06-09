@@ -1,0 +1,17 @@
+{
+  "name": "Streamlit Face Analytics (Py 3.10)",
+  // Use Microsoft’s official Python 3.10 image
+  "image": "mcr.microsoft.com/vscode/devcontainers/python:3.10",
+  // Automatically expose Streamlit’s default port
+  "forwardPorts": [8501],
+  // After the container is built, install your pinned deps
+  "postCreateCommand": "pip install --upgrade pip setuptools wheel && pip install -r requirements.txt",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "mhutchie.git-graph"
+      ]
+    }
+  }
+}
